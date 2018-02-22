@@ -31,6 +31,27 @@ function completeItem(){
     target.append(item);
 }
 
+//-----------------------------------------//
+
+
+//*1. TESTAR KNAPP*//
+const divTodo = document.getElementById('todo'); 
+const divClearTodo = document.getElementById('clearTodo'); 
+const clearButton = document.createElement('button');
+clearButton.textContent = "Clear All Todos";
+
+//*1. TESTAR KNAPP.*//
+add.addEventListener('click', function(){
+    const newClearButton = clearButton.cloneNode(true);
+    divClearTodo.appendChild(clearButton); 
+})
+
+clearButton.addEventListener('click', function(){
+    divTodo.parentNode.removeChild(li);
+})
+
+//-----------------------------------------//
+
 
 //Adds a new tem to the todo list
 function addItemTodo(text){

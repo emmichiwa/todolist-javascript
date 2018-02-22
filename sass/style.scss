@@ -35,7 +35,7 @@ a{
 li{
     font-size: 0.8rem; 
     list-style: none;
-    margin: 0px;
+    margin-top: 15px;
     padding: 0px;
 }
 
@@ -56,8 +56,6 @@ ul#completed.todo{
 .buttons svg{
     border: none;
     position: absolute;
-    margin: 5px; 
-    color: #DAD0EE; 
 }
 
 button.complete{
@@ -82,6 +80,20 @@ button .addItem{
     border: 1px solid #D0CDCE;
     background: #D0CDCE;
 }
+
+button.clearTodo{
+    width: 150px; 
+    background-color:#EECADC; 
+    border-radius: 0.25rem; 
+    height: 20px; 
+    font-size: 0.8rem; 
+    font-style: italic; 
+}
+
+// .clearTodo{
+//     width: 200px; 
+//     margin: 0px auto;
+// }
     
 .todolist{
     background-color:white;

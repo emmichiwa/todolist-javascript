@@ -47,7 +47,7 @@ add.addEventListener('click', function(){
 })
 
 clearButton.addEventListener('click', function(){
-    divTodo.parentNode.removeChild(li);
+    divTodo.parentNode.removeChild(divTodo);
 })
 
 //-----------------------------------------//

@@ -5,19 +5,56 @@
     <title>List</title>
     <script src="https://use.fontawesome.com/67b80e2b65.js"></script>
     <?xml version="1.0" encoding="utf-8"?>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <input type="text" id="item">
-    <button id="add">Add Task</button>
+    <main>
+        <div class="todoWrapper">
 
-    <p>TODO</p>
-    <ul class="todo" id="todo">
-    </ul> 
+            <div class="todolist">
+                <h2>TODO</h2>
+                <div class="addItem">
+                    <input class="input" id="item" placeholder="Add your task here"></input>
+                    <button class="addItem" id="add">Add task</button>
+                </div>
+                <div class="tableTodo">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>All tasks listed</th>
+                                <th class="thAction">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <ul class="todo" id="todo">
+                </ul> 
+            </div>
 
-    <p>DONE</p>
-    <ul class="todo" id="completed">
-    </ul>
-
-    <script src="main.js"></script>
+            <div class="doneTasks">
+                <h2>DONE</h2>
+                <div class="tableDone">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Completed Tasks</th>
+                                <th class="thDelete">Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <ul class="todo" id="completed">
+                </ul>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="socialicons">
+            <h2><a href="https://github.com/emmichiwa/Todolist"><i class="fa fa-github" aria-hidden="true"></i> EMMICHIWA</a></h2>
+            </div>
+            <div class="clear"></div>
+        </footer>
+        <script src="main.js"></script>
+    </main>
 </body>
 </html>

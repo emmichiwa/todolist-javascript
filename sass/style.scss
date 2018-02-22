@@ -1,9 +1,9 @@
 body{
-    background-image:url("images/flower.jpg");
+    background-image:url('../images/flower2.jpg');
     font-family:'Oswald', sans-serif;
     color:black;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     margin: 0px; 
     padding: 0px; 
 }
@@ -32,17 +32,53 @@ a{
     color: #A890E5;  
 }
 
-form{
+li{
+    font-size: 0.8rem; 
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#todo.todo{
+    margin-left: -35px; 
+}
+
+ul#completed.todo{
+    margin-left: -35px; 
+}
+
+.buttons{
+    display: inline-flex; 
+    float: right; 
+    width: 30%; 
+}
+
+.buttons svg{
+    border: none;
+    position: absolute;
+    margin: 5px; 
+    color: #DAD0EE; 
+}
+
+button.complete{
+    margin-right: 5px;  
+    border: none; 
+}
+
+button.remove{
+    border: none; 
+}
+
+// ul.todo li .buttons{
+//     color: red; 
+//     border: none; 
+// }
+
+.addItem{
     margin-bottom: 10px; 
 }
 
-.input{
-    margin: 2px;
-    width: 75%;  
-    border: 1px solid #B4B2B6; 
-}
-
-button{
+button .addItem{
     border: 1px solid #D0CDCE;
     background: #D0CDCE;
 }
@@ -71,12 +107,12 @@ th{
     font-size: 0.8rem; 
 }
 
-.task{
-    font-size: 0.8rem; 
-}
-
 .thAction{
     width: 10%; 
+}
+
+.thDelete{
+    width: 10%;
 }
 
 .action{
@@ -87,32 +123,4 @@ th{
 
 .delete{
     width: 10%; 
-}
-
-.message{
-    text-align: center; 
-    color: white; 
-    background-color: #FF7A7F; 
-}
-
-@media screen and (min-width: 800px) { 
-
-    body{
-       text-align: center; 
-    }
-
-    .todowrapper{
-        margin-top: 50px; 
-        display: inline-flex; 
-        text-align: left; 
-    }
-
-    .todolist{
-        margin: 20px;
-    }
-
-    .doneTasks{
-        margin: 20px;
-    }
-
 }
